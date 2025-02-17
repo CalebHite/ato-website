@@ -1,14 +1,16 @@
 import Image from "next/image";
+import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
     <div className="w-full flex flex-col items-center">
+      <Navbar />
       {/* Video Background */}
       <div className="w-full relative">
         <div className="relative w-full aspect-video">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/7x-8knpgpn4?si=h3sudtAmSBNbFr54&autoplay=1&controls=0&rel=0&mute=1&start=10&end=60&loop=1&playlist=7x-8knpgpn4"
+            src="https://www.youtube.com/embed/7x-8knpgpn4?si=h3sudtAmSBNbFr54&autoplay=1&controls=0&rel=0&mute=1&start=10&loop=1&playlist=7x-8knpgpn4"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -29,7 +31,7 @@ export default function Home() {
           <img
             src="/images/ATO-dark-blue-yellow@2x.webp"
             alt="ATO Logo"
-            className="w-80 h-auto object-contain brightness-200 -mt-20"
+            className="w-80 h-auto object-contain brightness-200 -mt-40"
           />
           <h2 className="text-gray-200 text-xl mt-4">
             At The University of Kansas
