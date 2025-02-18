@@ -1,4 +1,10 @@
 import Navbar from "../components/navbar";
+import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
+
+
+const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
+const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function About() {
     return (

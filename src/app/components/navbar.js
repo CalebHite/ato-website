@@ -1,6 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
+
+const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
+const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -33,7 +38,7 @@ const Navbar = () => {
             <button
               key={tab.id}
               onClick={() => handleTabClick(tab.id, tab.sectionId)}
-              className={`cursor-pointer hover:text-orange-300 border relative z-10 flex w-full items-center justify-center px-3 py-2 text-md font-medium transition-colors duration-300 rounded-full
+              className={`cursor-pointer hover:text-orange-300 border relative z-10 flex w-full items-center justify-center px-3 py-2 text-md font-medium transition-colors duration-300 rounded-full ${montserrat.className}
                 ${activeTab === tab.id ? 'border-gray-400' : 'border-transparent'}`}
             >
               {tab.label}
