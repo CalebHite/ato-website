@@ -1,5 +1,7 @@
 import Navbar from "../components/navbar";
 import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
+import Footer from "../components/footer";
+
 
 const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
@@ -9,15 +11,15 @@ export default function Recruitment() {
     return (
         <div>
             <Navbar />
-            <div className="relative h-screen">
+            <div className="relative h-screen flex items-center justify-center">
                 <img 
                     src="/images/filler.jpg" 
-                    className="absolute -mt-40 w-full h-full" 
+                    className="absolute w-full h-full" 
                     alt="Background"
                 />
                 <img 
                     src="images/Join-ATO-white-yellow-logo@2x.webp" 
-                    className="relative z-10 mx-auto mt-60" 
+                    className="relative z-10 mx-auto" 
                     alt="Logo"
                 />
             </div>
@@ -65,6 +67,24 @@ export default function Recruitment() {
                 </div>
                 </div>
             </div>
+            <div className="recruitment-process-container w-full bg-white flex flex-col items-center justify-center p-8 py-20 shadow-lg">
+                <h4 className={`recruitment-title text-3xl text-center text-gray-900 font-semibold ${oswald.className}`}>
+                    Recruitment Process
+                </h4>
+                <ul className={`recruitment-steps list-disc list-inside text-lg text-gray-800 mt-6 space-y-2 ${montserrat.className}`}>
+                    <li>Fill out the Rush Interest Form</li>
+                    <li>Reach out to a Rush Chair</li>
+                    <li>Attend rush events and house tours</li>
+                    <li>Get to know ATO brothers and other future ATOs</li>
+                    <li>Once offered, sign your official ATO bid card</li>
+                </ul>
+                <a href="https://forms.gle/XGVvBArzXMg8FJcx7" target="_blank" rel="noopener noreferrer">
+                    <button className={`interest-form-button mt-6 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-lg py-3 px-8 ${montserrat.className}`}>
+                        Interest Form
+                    </button>
+                </a>
+            </div>
+            <Footer />
         </div>
     )
 }

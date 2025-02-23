@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
+import Footer from "./components/footer";
 
 const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
@@ -58,6 +59,7 @@ export default function Home() {
         <br />
         <img src="/images/signature.png" alt="Robert Boersma" className="mt-8 w-80 h-full" />
       </div>
+      <Footer />
     </div>
   );
 }
