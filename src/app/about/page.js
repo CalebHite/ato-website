@@ -9,7 +9,7 @@ const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500',
 export default function About() {
     return (
         <div className="min-h-screen">
-            <Navbar />
+            <Navbar theme="light" />
             <div className="flex flex-col items-center justify-center mt-40 px-8 pb-20">
                 <div className="mb-8 w-full max-w-3xl text-center">
                     <h1 className={`text-4xl text-center mb-4 ${oswald.className}`}>Our History</h1>

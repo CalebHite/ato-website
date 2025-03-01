@@ -10,7 +10,7 @@ const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500',
 export default function Recruitment() {
     return (
         <div>
-            <Navbar />
+            <Navbar theme="dark" />
             <div className="relative h-screen flex items-center justify-center">
                 <img 
                     src="/images/filler.jpg" 

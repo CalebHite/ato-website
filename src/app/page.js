@@ -10,8 +10,7 @@ const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500',
 export default function Home() {
   return (
     <div className="w-full flex flex-col items-center">
-      <Navbar />
-      {/* Video Background */}
+      <Navbar theme="dark" />
       <div className="w-full relative">
         <div className="relative w-full aspect-video">
           <iframe
@@ -26,13 +25,11 @@ export default function Home() {
           ></iframe>
         </div>
 
-        {/* New Overlay Div */}
         <div className="absolute bottom-0 left-0 w-full h-40 flex flex-row items-center justify-center" style={{ background: "#F4F5FA" }}>
           <img src="/images/jayhawks1.jpg" alt="Jayhawks" className="w-80 h-auto object-contain mr-4" />
           <img src="/images/jayhawks2.jpg" alt="Jayhawks" className="w-80 h-auto object-contain ml-4" />
         </div>
 
-        {/* Logo and Text Overlay */}
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
           <img
             src="/images/ATO-dark-blue-yellow@2x.webp"
@@ -45,7 +42,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Letter Section */}
       <div className="w-full py-20 pb-40 bg-white flex flex-col items-center text-center">
         <h1 className={`text-black text-4xl ${crimsonText.className}`}>A Letter From Our President</h1>
         <img src="/images/gold-cross.png" alt="Gold Cross" className="mt-8 w-16 h-16" />
