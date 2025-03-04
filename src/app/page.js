@@ -12,6 +12,7 @@ export default function Home() {
     <div className="w-full flex flex-col items-center">
       <Navbar theme="dark" />
       <div className="w-full relative">
+        <div className="absolute top-0 left-0 w-full z-10" style={{ backgroundColor: '#121212', height: '6.5rem'}}></div>
         <div className="relative w-full aspect-video">
           <iframe
             className="w-full h-full"
