@@ -17,9 +17,18 @@ export default function Recruitment() {
                     className="absolute w-full h-full" 
                     alt="Background"
                 />
+                <div 
+                    className="absolute w-full h-full z-20"
+                    style={{
+                        backgroundImage: 'url(/images/asfalt-light.png)',
+                        backgroundSize: '15%',
+                        backgroundRepeat: 'repeat'
+                    }}
+                    alt="Overlay"
+                />
                 <img 
                     src="images/Join-ATO-white-yellow-logo@2x.webp" 
-                    className="relative z-10 mx-auto" 
+                    className="relative z-30 mx-auto" 
                     alt="Logo"
                 />
             </div>
