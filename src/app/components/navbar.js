@@ -26,8 +26,15 @@ const Navbar = ({ theme }) => {
   useEffect(() => {
     const currentPath = window.location.pathname.replace('/', '');
     const currentTab = tabs.find(tab => tab.sectionId === currentPath);
+    
+    // If no current tab is found, default to About
     if (currentTab) {
       setActiveTab(currentTab.id);
+    } else {
+      const aboutTab = tabs.find(tab => tab.label === 'About');
+      if (aboutTab) {
+        setActiveTab(aboutTab.id);
+      }
     }
   }, [window.location.pathname]);
 
