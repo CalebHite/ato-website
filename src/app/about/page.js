@@ -14,10 +14,10 @@ export default function About() {
                 <div className="w-full z-10" style={{ backgroundColor: '#121212', height: '6.5rem' }}></div>
             </div>
             <div className="relative flex items-center justify-center" style={{ height: '40vh' }}>
-                <img
-                    src="/images/house.jpg"
+                <div
                     className="absolute w-full h-full object-cover"
                     alt="Background"
+                    style={{ backgroundImage: 'url(/images/house.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', boxShadow: '0 -16px 8px 8px white inset' }}
                 />
                 <div className="flex items-center ml-20">
                     <h1 className={`mt-10 text-8xl text-white ${oswald.className} mb-16 z-10`} style={{ textShadow: '2px 2px 0 rgba(0, 0, 0, 0.7)' }}>About</h1>
@@ -31,7 +31,7 @@ export default function About() {
             <div className="items-center m-auto text-center">
                 <h1 className={`text-6xl mt-4 ${oswald.className}`} style={{ color: '#F79825' }}>GENERAL</h1>
             </div>
-                <hr className="w-3/4 mx-auto my-8" />
+            <hr className="w-3/4 mx-auto my-8" />
             <div className="flex flex-grow">
                 <div className="flex flex-col items-center justify-left px-8 pb-10 w-3/4 text-left">
                     <div className="mb-8 w-full max-w-3xl">
@@ -52,9 +52,9 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center px-8 w-1/4 text-center">
-                    <h2 className={`text-2xl mb-4 text-right ${oswald.className}`} style={{ color: '#F79825' }}>Involvement</h2>
+                    <h2 className={`text-2xl mb-4 text-right ${oswald.className}`} style={{ color: '#F79825' }}>Campus Involvement</h2>
                     <div className="flex flex-col space-y-4">
-                        <Link href="/about" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">About ATO</Link>
+                        <Link href="/about" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">General</Link>
                         <Link href="/leadership" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">Leadership</Link>
                         <Link href="/philanthropy" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">Philanthropy & Community Service</Link>
                         <Link href="/awards" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">Honors & Awards</Link>
