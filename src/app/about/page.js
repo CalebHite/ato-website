@@ -48,7 +48,14 @@ export default function About() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Alumni</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Alumni relations is a critical part of our chapter. We have alumni from all kinds of industries, including business, finance, energy, engineering, and more. These alumni serve as role models for our brothers, showing what a member of ATO can go on to accomplish. The generous donations of these alumni help to fund projects in our house, and help grow our fraternity.                        </p>
+                            Alumni relations is a critical part of our chapter. We have alumni from all kinds of industries, including business, finance, energy, engineering, and more. These alumni serve as role models for our brothers, showing what a member of ATO can go on to accomplish. The generous donations of these alumni help to fund projects in our house, and help grow our fraternity.
+                        </p>
+                    </div>
+                    <div className="mb-8 w-full max-w-3xl">
+                        <br />
+                        <p className={`text-md text-gray-800 ${montserrat.className}`}>
+                            You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs on the right.
+                        </p>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center px-8 w-1/4 text-center">

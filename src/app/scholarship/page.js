@@ -33,6 +33,7 @@ export default function Scholarship() {
             </div>
             <hr className="w-3/4 mx-auto my-8" />
             <div className="flex flex-grow">
+            Cumulative GPA of 3.325 with members in all disciplines
                 <div className="flex flex-col items-center justify-left px-8 pb-10 w-3/4 text-left">
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our History</h1>

@@ -1,11 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
-const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
-const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 const Navbar = ({ theme }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,7 +11,7 @@ const Navbar = ({ theme }) => {
   const tabs = [
     { id: 0, label: 'Home', sectionId: '' },
     { id: 1, label: 'About', sectionId: 'about' },
-    { id: 2, label: 'Recruitment', sectionId: 'recruitment' },
+    { id: 2, label: 'Join ATO', sectionId: 'recruitment' },
     { id: 3, label: 'Parents & Alumni', sectionId: 'parents-alumni' },
   ];
 
