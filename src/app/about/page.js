@@ -3,25 +3,34 @@
 import Navbar from "../components/navbar";
 import { Montserrat, Oswald } from 'next/font/google';
 import Footer from "../components/footer";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function About() {
-    useEffect(() => {
-        // Only run in browser environment
-        if (typeof window !== 'undefined') {
-            const handleResize = () => {
-                console.log(window.innerWidth);
-            };
+    // Add state to track if component is mounted
+    const [isMounted, setIsMounted] = useState(false);
 
-            handleResize();
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }
+    useEffect(() => {
+        // Mark component as mounted
+        setIsMounted(true);
+        
+        // Add resize listener only after component is mounted
+        const handleResize = () => {
+            console.log(window.innerWidth);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    // Return a loading state or null until component is mounted
+    if (!isMounted) {
+        return null; // Or a loading indicator
+    }
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -73,7 +82,6 @@ export default function About() {
                         <Link href="/scholarship" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">Scholarship</Link>
                     </div>
                 </div>
-
             </div>
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-wrap justify-center gap-4 mt-4">
