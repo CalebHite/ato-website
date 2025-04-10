@@ -1,13 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
 import Footer from "./components/footer";
+import { useClientSideOnly } from '../hooks/useClientSideOnly';
 
 const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function Home() {
+  const isMounted = useClientSideOnly();
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <div className="w-full flex flex-col items-center">
       <Navbar theme="dark" />
@@ -47,7 +56,7 @@ export default function Home() {
         <h1 className={`text-black text-4xl ${crimsonText.className}`}>A Letter From Our President</h1>
         <img src="/images/gold-cross.png" alt="Gold Cross" className="mt-8 w-16 h-16" />
         <p className={`mt-8 text-black text-sm w-1/2 ${montserrat.className}`}>
-        As President of ATO at the University of Kansas, I am honored to welcome you to our brotherhood. At ATO, we foster lifelong bonds, academic excellence, and personal growth that extends far beyond college.
+          As President of ATO at the University of Kansas, I am honored to welcome you to our brotherhood. At ATO, we foster lifelong bonds, academic excellence, and personal growth that extends far beyond college.
           <br />
           <br />
           Brotherhood is at our core. More than friends, we are a family who support one another through challenges and triumphs. Whether through chapter events, social activities, or serving our community, the connections built here will last a lifetime.
@@ -59,7 +68,7 @@ export default function Home() {
           ATO shapes young men into future leaders. Through service and leadership, we give back to our campus and community while developing key life skills. Our members are able to grow and learn in a structured, supportive environment.
           <br />
           <br />
-          If you’re considering joining, you’ll find a lifelong family and opportunities for growth. We look forward to welcoming you!
+          If you're considering joining, you'll find a lifelong family and opportunities for growth. We look forward to welcoming you!
         </p>
         <h2 className={`mt-8 text-black text-2xl ${crimsonText.className}`}>L&R</h2>
         <br />

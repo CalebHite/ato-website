@@ -1,12 +1,21 @@
+"use client";
+
 import { Montserrat, Oswald } from 'next/font/google';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Link from 'next/link';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function Awards() {
+    const isMounted = useClientSideOnly();
+
+    if (!isMounted) {
+        return null;
+    }
+
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar theme="dark" />
@@ -37,11 +46,11 @@ export default function Awards() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Honors & Awards</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            At the national level, our chapter has been honored with prestigious awards from the ATO Fraternity, such as the True Merit Award for overall chapter excellence, the Academic Excellence Award for outstanding scholarship, and the Community Service Award for impactful philanthropy. These accolades reflect our commitment to upholding ATO’s values while setting a high standard for Greek life at KU.
+                            At the national level, our chapter has been honored with prestigious awards from the ATO Fraternity, such as the True Merit Award for overall chapter excellence, the Academic Excellence Award for outstanding scholarship, and the Community Service Award for impactful philanthropy. These accolades reflect our commitment to upholding ATO's values while setting a high standard for Greek life at KU.
                         </p>
                         <br />
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            On campus, our brothers are frequently recognized for individual and collective achievements. Members have received Order of Omega distinction, KU’s Men of Merit honors, and Dean’s List accolades, showcasing their dedication to leadership and academics. Additionally, the chapter has been celebrated in Interfraternity Council (IFC) awards, winning titles like Chapter of the Year and Highest Brotherhood GPA. These honors are a testament to the hard work of our brothers, past and present, who strive to make Gamma Mu a distinguished and respected organization at the University of Kansas.
+                            On campus, our brothers are frequently recognized for individual and collective achievements. Members have received Order of Omega distinction, KU's Men of Merit honors, and Dean's List accolades, showcasing their dedication to leadership and academics. Additionally, the chapter has been celebrated in Interfraternity Council (IFC) awards, winning titles like Chapter of the Year and Highest Brotherhood GPA. These honors are a testament to the hard work of our brothers, past and present, who strive to make Gamma Mu a distinguished and respected organization at the University of Kansas.
                         </p>
                     </div>
                 </div>

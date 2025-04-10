@@ -1,12 +1,21 @@
+"use client";
+
 import { Montserrat, Oswald } from 'next/font/google';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Link from 'next/link';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function Philanthropy() {
+    const isMounted = useClientSideOnly();
+
+    if (!isMounted) {
+        return null;
+    }
+
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar theme="dark" />
@@ -37,7 +46,7 @@ export default function Philanthropy() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Philanthropy</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            The Gamma Mu chapter of Alpha Tau Omega at KU takes pride in making a meaningful impact through philanthropy and community service. Whether it’s coordinating donation drives, participating in campus-wide philanthropy competitions, or raising thousands of dollars through <a href="https://rockchalkrevue.com" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Rock Chalk Revue</a>, ATO ensures that our community remains a force for good.
+                            The Gamma Mu chapter of Alpha Tau Omega at KU takes pride in making a meaningful impact through philanthropy and community service. Whether it's coordinating donation drives, participating in campus-wide philanthropy competitions, or raising thousands of dollars through <a href="https://rockchalkrevue.com" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Rock Chalk Revue</a>, ATO ensures that our community remains a force for good.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">

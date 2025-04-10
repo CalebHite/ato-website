@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { Montserrat } from 'next/font/google';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
 const Navbar = ({ theme }) => {
   const [activeTab, setActiveTab] = useState(0);
+  const isMounted = useClientSideOnly();
 
   const tabs = [
     { id: 0, label: 'Home', sectionId: '' },
@@ -17,24 +19,32 @@ const Navbar = ({ theme }) => {
 
   const handleTabClick = (id, sectionId) => {
     setActiveTab(id);
-    window.location.href = `/${sectionId}`;
+    if (isMounted) {
+      window.location.href = `/${sectionId}`;
+    }
   };
 
   // Update active tab based on current URL
   useEffect(() => {
-    const currentPath = window.location.pathname.replace('/', '');
-    const currentTab = tabs.find(tab => tab.sectionId === currentPath);
-    
-    // If no current tab is found, default to About
-    if (currentTab) {
-      setActiveTab(currentTab.id);
-    } else {
-      const aboutTab = tabs.find(tab => tab.label === 'About');
-      if (aboutTab) {
-        setActiveTab(aboutTab.id);
+    if (isMounted) {
+      const currentPath = window.location.pathname.replace('/', '');
+      const currentTab = tabs.find(tab => tab.sectionId === currentPath);
+      
+      // If no current tab is found, default to About
+      if (currentTab) {
+        setActiveTab(currentTab.id);
+      } else {
+        const aboutTab = tabs.find(tab => tab.label === 'About');
+        if (aboutTab) {
+          setActiveTab(aboutTab.id);
+        }
       }
     }
-  }, [window.location.pathname]);
+  }, [isMounted]);
+
+  if (!isMounted) {
+    return null;
+  }
 
   const textColor = theme === 'dark' ? 'text-gray-300' : 'text-gray-800';
   const borderColor = theme === 'dark' ? 'border-gray-300' : 'border-gray-800';

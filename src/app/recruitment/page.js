@@ -1,12 +1,20 @@
+"use client";
+
 import Navbar from "../components/navbar";
 import { Montserrat, Oswald } from 'next/font/google';
 import Footer from "../components/footer";
-
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function Recruitment() {
+    const isMounted = useClientSideOnly();
+
+    if (!isMounted) {
+        return null;
+    }
+
     return (
         <div>
             <Navbar theme="dark" />

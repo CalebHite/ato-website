@@ -1,12 +1,22 @@
+"use client";
+
 import Navbar from "../components/navbar";
 import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
 import Footer from "../components/footer";
+import Link from 'next/link';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function ParentsAlumni() {
+    const isMounted = useClientSideOnly();
+
+    if (!isMounted) {
+        return null;
+    }
+
     return (
         <div className="min-h-screen">
             <Navbar theme="light" />

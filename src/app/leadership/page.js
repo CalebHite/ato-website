@@ -1,12 +1,21 @@
+"use client";
+
 import { Montserrat, Oswald } from 'next/font/google';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Link from 'next/link';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function Leadership() {
+    const isMounted = useClientSideOnly();
+
+    if (!isMounted) {
+        return null;
+    }
+
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar theme="dark" />

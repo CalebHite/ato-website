@@ -3,33 +3,27 @@
 import Navbar from "../components/navbar";
 import { Montserrat, Oswald } from 'next/font/google';
 import Footer from "../components/footer";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function About() {
-    // Add state to track if component is mounted
-    const [isMounted, setIsMounted] = useState(false);
+    const isMounted = useClientSideOnly();
 
     useEffect(() => {
-        // Mark component as mounted
-        setIsMounted(true);
-        
-        // Add resize listener only after component is mounted
         const handleResize = () => {
             console.log(window.innerWidth);
         };
 
-        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // Return a loading state or null until component is mounted
     if (!isMounted) {
-        return null; // Or a loading indicator
+        return null;
     }
 
     return (

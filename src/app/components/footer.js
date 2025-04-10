@@ -3,11 +3,14 @@
 import React from 'react';
 import { Montserrat, Oswald } from 'next/font/google';
 import emailjs from 'emailjs-com';
+import { useClientSideOnly } from '../../hooks/useClientSideOnly';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 const Footer = () => {
+    const isMounted = useClientSideOnly();
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -22,11 +25,17 @@ const Footer = () => {
     };
 
     const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth', // This enables smooth scrolling
-        });
+        if (isMounted) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        }
     };
+
+    if (!isMounted) {
+        return null;
+    }
 
     return (
         <footer className="site-footer w-full text-white py-16 pb-20" style={{ backgroundColor: '#163551' }}>
