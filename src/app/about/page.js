@@ -11,12 +11,12 @@ const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500',
 
 export default function About() {
     useEffect(() => {
-        const handleResize = () => {
-            console.log(window.innerWidth);
-        };
-
-        // Only add event listener in browser environment
+        // Only run in browser environment
         if (typeof window !== 'undefined') {
+            const handleResize = () => {
+                console.log(window.innerWidth);
+            };
+
             handleResize();
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
