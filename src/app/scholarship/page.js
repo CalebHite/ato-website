@@ -33,23 +33,19 @@ export default function Scholarship() {
             </div>
             <hr className="w-3/4 mx-auto my-8" />
             <div className="flex flex-grow">
-            Cumulative GPA of 3.325 with members in all disciplines
                 <div className="flex flex-col items-center justify-left px-8 pb-10 w-3/4 text-left">
+
                     <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our History</h1>
+                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Chapter Scholarship</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Gamma Mu was founded in 1901 with slow but sustainable growth in the early years. In the 1940's we built our chapter house at 1537 Tennessee Street, which is the same house we live in today. By the 1980's we had grown into one of the largest and strongest brotherhoods on campus. Even after over 100 years, we still maintain the original values we were founded with. Values of fellowship, scholarship, and strong character.
+                            With a cumulative chapter GPA of 3.325 from business and engineering to the arts and sciences, our brothers consistently demonstrate excellence across all disciplines. This success is driven by a strong support system, including mandatory study hours, peer tutoring, and faculty mentorship. Every member has the tools to thrive in the classroom, and we hold ourselves accountable for our brothers' academic success.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Brotherhood</h1>
+                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Individual Scholarship</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Our brotherhood includes majors from every department at KU and members of numerous campus organizations. We welcome brothers from all backgrounds and walks of life. To help foster brotherhood, we organize events like football games, paintball, social events, and other activities. We also have out of state formal and semi-formal trips which help to build our brotherhood.</p>
-                    </div>
-                    <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Alumni</h1>
-                        <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Alumni relations is a critical part of our chapter. We have alumni from all kinds of industries, including business, finance, energy, engineering, and more. These alumni serve as role models for our brothers, showing what a member of ATO can go on to accomplish. The generous donations of these alumni help to fund projects in our house, and help grow our fraternity.                        </p>
+                            Each individual in ATO is strongly encouraged to pursue their own academic goals. We foster a culture of academic excellence and offer a variety of resources to help our brothers succeed. Almost all of our brothers have received scholarships and internships throughout their time at ATO, while every member has graduated with a minimum 3.0 GPA.
+                        </p>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center px-8 w-1/4 text-center">
@@ -63,6 +59,16 @@ export default function Scholarship() {
                     </div>
                 </div>
             </div>
+
+            <div className="flex flex-col items-center mb-10">
+                <div className="flex flex-wrap justify-center gap-4 mt-4">
+                    <img src="/images/Internships.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
+                    <img src="/images/Grad1.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />
+                </div>
+            </div>
+            <p className={`text-xl text-gray-900 text-center w-full mb-10 ${oswald.className}`}>
+                You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs on the right.
+            </p>
             <Footer />
         </div>
     );

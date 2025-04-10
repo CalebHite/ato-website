@@ -12,19 +12,11 @@ export default function Recruitment() {
             <Navbar theme="dark" />
             <div className="relative h-screen flex items-center justify-center">
                 <img
-                    src="/images/filler.jpg"
-                    className="absolute w-full h-full"
+                    src="/images/Retreat.jpg"
+                    className="absolute w-full h-full object-cover"
                     alt="Background"
                 />
-                <div
-                    className="absolute w-full h-full z-20"
-                    style={{
-                        backgroundImage: 'url(/images/asfalt-light.png)',
-                        backgroundSize: '15%',
-                        backgroundRepeat: 'repeat'
-                    }}
-                    alt="Overlay"
-                />
+                <div className="absolute w-full h-full bg-black opacity-50 z-10" />
                 <img
                     src="images/Join-ATO-white-yellow-logo@2x.webp"
                     className="relative z-30 mx-auto"
@@ -104,13 +96,11 @@ export default function Recruitment() {
                 <h4 className={`recruitment-title text-3xl text-center text-gray-800 font-semibold ${oswald.className}`}>
                     Recruitment Process
                 </h4>
-                <ul className={`recruitment-steps list-disc list-inside text-lg text-gray-800 mt-6 space-y-2 ${montserrat.className}`}>
-                    <li>Fill out the Rush Interest Form</li>
-                    <li>Reach out to a Rush Chair</li>
-                    <li>Attend rush events and house tours</li>
-                    <li>Get to know ATO brothers and other future ATOs</li>
-                    <li>Once offered, sign your official ATO bid card</li>
-                </ul>
+                <div className={`recruitment-steps list-disc list-inside text-lg text-gray-800 mt-6 space-y-2 ${montserrat.className}`}>
+                    <p>Fill out the Rush Interest Form below and reach out to a Rush Chair.</p>
+                    <p>Attend rush events and house tours to get to know ATO brothers and other future ATOs.</p>
+                    <p>If offered, sign your official ATO bid card!</p>
+                </div>
                 <a href="https://forms.gle/XGVvBArzXMg8FJcx7" target="_blank" rel="noopener noreferrer">
                     <button className={`interest-form-button mt-6 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-lg py-3 px-8 ${montserrat.className}`}>
                         Interest Form

@@ -35,20 +35,14 @@ export default function Awards() {
             <div className="flex flex-grow">
                 <div className="flex flex-col items-center justify-left px-8 pb-10 w-3/4 text-left">
                     <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our History</h1>
+                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Honors & Awards</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Gamma Mu was founded in 1901 with slow but sustainable growth in the early years. In the 1940's we built our chapter house at 1537 Tennessee Street, which is the same house we live in today. By the 1980's we had grown into one of the largest and strongest brotherhoods on campus. Even after over 100 years, we still maintain the original values we were founded with. Values of fellowship, scholarship, and strong character.
+                            At the national level, our chapter has been honored with prestigious awards from the ATO Fraternity, such as the True Merit Award for overall chapter excellence, the Academic Excellence Award for outstanding scholarship, and the Community Service Award for impactful philanthropy. These accolades reflect our commitment to upholding ATO’s values while setting a high standard for Greek life at KU.
                         </p>
-                    </div>
-                    <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Brotherhood</h1>
+                        <br />
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Our brotherhood includes majors from every department at KU and members of numerous campus organizations. We welcome brothers from all backgrounds and walks of life. To help foster brotherhood, we organize events like football games, paintball, social events, and other activities. We also have out of state formal and semi-formal trips which help to build our brotherhood.</p>
-                    </div>
-                    <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Alumni</h1>
-                        <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Alumni relations is a critical part of our chapter. We have alumni from all kinds of industries, including business, finance, energy, engineering, and more. These alumni serve as role models for our brothers, showing what a member of ATO can go on to accomplish. The generous donations of these alumni help to fund projects in our house, and help grow our fraternity.                        </p>
+                            On campus, our brothers are frequently recognized for individual and collective achievements. Members have received Order of Omega distinction, KU’s Men of Merit honors, and Dean’s List accolades, showcasing their dedication to leadership and academics. Additionally, the chapter has been celebrated in Interfraternity Council (IFC) awards, winning titles like Chapter of the Year and Highest Brotherhood GPA. These honors are a testament to the hard work of our brothers, past and present, who strive to make Gamma Mu a distinguished and respected organization at the University of Kansas.
+                        </p>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center px-8 w-1/4 text-center">
@@ -62,6 +56,17 @@ export default function Awards() {
                     </div>
                 </div>
             </div>
+
+            <div className="flex flex-col items-center mb-10">
+                <div className="flex flex-wrap justify-center gap-4 mt-4">
+                    <img src="/images/True-Merit.png" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="True Merit Award" />
+                    <img src="/images/signing.png" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Academic Excellence Award" />
+                </div>
+            </div>
+
+            <p className={`text-xl text-gray-900 text-center w-full mb-10 ${oswald.className}`}>
+                You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs on the right.
+            </p>
             <Footer />
         </div>
     );

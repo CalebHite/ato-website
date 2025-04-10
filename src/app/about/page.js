@@ -37,24 +37,13 @@ export default function About() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our History</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Gamma Mu was founded in 1901 with slow but sustainable growth in the early years. In the 1940's we built our chapter house at 1537 Tennessee Street, which is the same house we live in today. By the 1980's we had grown into one of the largest and strongest brotherhoods on campus. Even after over 100 years, we still maintain the original values we were founded with. Values of fellowship, scholarship, and strong character.
+                            The Gamma Mu chapter of Alpha Tau Omega was founded in 1901, establishing a strong tradition of brotherhood and leadership at the University of Kansas. The chapter's first house was built at 1537 Tennessee Street in the 1940s and continues to serve as our home. Over the years, Gamma Mu has grown into one of the largest and most influential brotherhoods on campus, committed to fellowship, scholarship, and community service. Our members actively participate in campus organizations and leadership roles, enhancing their college experience. Alumni often return to share their stories, highlighting the lasting impact of their time in ATO and the friendships formed here.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Brotherhood</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Our brotherhood includes majors from every department at KU and members of numerous campus organizations. We welcome brothers from all backgrounds and walks of life. To help foster brotherhood, we organize events like football games, paintball, social events, and other activities. We also have out of state formal and semi-formal trips which help to build our brotherhood.</p>
-                    </div>
-                    <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Alumni</h1>
-                        <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Alumni relations is a critical part of our chapter. We have alumni from all kinds of industries, including business, finance, energy, engineering, and more. These alumni serve as role models for our brothers, showing what a member of ATO can go on to accomplish. The generous donations of these alumni help to fund projects in our house, and help grow our fraternity.
-                        </p>
-                    </div>
-                    <div className="mb-8 w-full max-w-3xl">
-                        <br />
-                        <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs on the right.
+                            Our brotherhood includes members from diverse fields such as engineering, business, science, and arts. We promote this diversity by organizing events that broaden our members' experiences, including social gatherings and out-of-state trips. These activities create lasting memories and strengthen our bonds. Additionally, ATO alumni frequently visit to share their insights, emphasizing the enduring legacy of our fraternity and the lifelong friendships formed within our community.
                         </p>
                     </div>
                 </div>
@@ -68,7 +57,18 @@ export default function About() {
                         <Link href="/scholarship" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">Scholarship</Link>
                     </div>
                 </div>
+
             </div>
+            <div className="flex flex-col items-center mb-10">
+                <div className="flex flex-wrap justify-center gap-4 mt-4">
+                    <img src="/images/athletic1.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
+                    <img src="/images/Paintball.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />
+                    <img src="/images/RCR1.jpeg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="RCR Activities" />
+                </div>
+            </div>
+            <p className={`text-xl text-gray-900 text-center w-full mb-10 ${oswald.className}`}>
+                You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs on the right.
+            </p>
             <Footer />
         </div>
     );
