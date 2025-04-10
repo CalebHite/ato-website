@@ -1,12 +1,28 @@
+"use client";
+
 import Navbar from "../components/navbar";
 import { Crimson_Text, Montserrat, Oswald } from 'next/font/google';
 import Footer from "../components/footer";
+import { useEffect } from 'react';
 
 const crimsonText = Crimson_Text({ subsets: ['latin'], weight: ['400', '600', '700'] });
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
 export default function About() {
+    useEffect(() => {
+        const handleResize = () => {
+            console.log(window.innerWidth);
+        };
+
+        // Only add event listener in browser environment
+        if (typeof window !== 'undefined') {
+            handleResize();
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
     return (
         <div className="min-h-screen">
             <Navbar theme="light" />
