@@ -1,28 +1,12 @@
-"use client";
-
-import Navbar from "../components/navbar";
 import { Montserrat, Oswald } from 'next/font/google';
+import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { useEffect } from 'react';
 import Link from 'next/link';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
 
-export default function About() {
-    useEffect(() => {
-        const handleResize = () => {
-            console.log(window.innerWidth);
-        };
-
-        // Only add event listener in browser environment
-        if (typeof window !== 'undefined') {
-            handleResize();
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }
-    }, []);
-
+export default function Leadership() {
     return (
         <div className="min-h-screen flex flex-col">
             <Navbar theme="dark" />
@@ -45,21 +29,21 @@ export default function About() {
                 </div>
             </div>
             <div className="items-center m-auto text-center">
-                <h1 className={`text-6xl mt-4 ${oswald.className}`} style={{ color: '#F79825' }}>GENERAL</h1>
+                <h1 className={`text-6xl mt-4 ${oswald.className}`} style={{ color: '#F79825' }}>LEADERSHIP</h1>
             </div>
             <hr className="w-3/4 mx-auto my-8" />
             <div className="flex flex-grow">
                 <div className="flex flex-col items-center justify-left px-8 pb-10 w-3/4 text-left">
                     <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our History</h1>
+                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Executive Council</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            The Gamma Mu chapter of Alpha Tau Omega was founded in 1901, establishing a strong tradition of brotherhood and leadership at the University of Kansas. The chapter's first house was built at 1537 Tennessee Street in the 1940s and continues to serve as our home. Over the years, Gamma Mu has grown into one of the largest and most influential brotherhoods on campus, committed to fellowship, scholarship, and community service. Our members actively participate in campus organizations and leadership roles, enhancing their college experience. Alumni often return to share their stories, highlighting the lasting impact of their time in ATO and the friendships formed here.
+                            The Executive Council is the governing body of the chapter. There are 10 Executive Council members, each with a unique role. Every member of the Executive Council is elected by the brotherhood and holds an inegral role. Most Executive members learn the value of leadership and responsibility by serving on the Executive Council. They are responsible for the overall direction of the chapter and the implementation of the policies and decisions of the chapter.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
-                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Brotherhood</h1>
+                        <h1 className={`text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Chair Positions</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Our brotherhood includes members from diverse fields such as engineering, business, science, and arts. We promote this diversity by organizing events that broaden our members' experiences, including social gatherings and out-of-state trips. These activities create lasting memories and strengthen our bonds. Additionally, ATO alumni frequently visit to share their insights, emphasizing the enduring legacy of our fraternity and the lifelong friendships formed within our community.
+                            Beyond the Executive Council, dedicated brothers serve in specialized Chair roles to enhance the member experience at ATO. Some examples of Chair positions are Philanthropy Chair, Scholarship Chair, and Social Chair. Holding a Chair Position is another great way to learn the value of leadership and responsibility. Chairs are also elected by the brotherhood and play a vital part of the chapter.
                         </p>
                     </div>
                 </div>
@@ -73,15 +57,16 @@ export default function About() {
                         <Link href="/scholarship" className="p-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors">Scholarship</Link>
                     </div>
                 </div>
-
             </div>
+
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-wrap justify-center gap-4 mt-4">
-                    <img src="/images/athletic1.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
-                    <img src="/images/Paintball.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />
-                    <img src="/images/RCR1.jpeg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="RCR Activities" />
+                    <img src="/images/Exec.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
+                    <img src="/images/Grad2.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />
+                    <img src="/images/Skiing.jpg" className="w-128 h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />
                 </div>
             </div>
+            
             <p className={`text-xl text-gray-900 text-center w-full mb-10 ${oswald.className}`}>
                 You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs on the right.
             </p>
