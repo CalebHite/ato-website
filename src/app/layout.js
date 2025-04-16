@@ -1,34 +1,41 @@
+'use client';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { useState, useEffect } from 'react';
+import MobileNav from './components/mobile-nav';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist-sans",
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist-mono",
 });
 
-export const metadata = {
-  title: "ATΩ Kansas",
-  description: "University of Kansas chapter of the Alpha Tau Omega Fraternity",
-  icons: {
-    icon: "../public/images/gold-cross.png",
-  },
-};
-
 export default function RootLayout({ children }) {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  useEffect(() => {
+    const handleToggleMobileNav = () => {
+      setIsMobileNavOpen(prev => !prev);
+    };
+
+    window.addEventListener('toggleMobileNav', handleToggleMobileNav);
+    return () => {
+      window.removeEventListener('toggleMobileNav', handleToggleMobileNav);
+    };
+  }, []);
+
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="../public/images/gold-cross.png" />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <MobileNav isOpen={isMobileNavOpen} onClose={() => setIsMobileNavOpen(false)} />
       </body>
     </html>
   );

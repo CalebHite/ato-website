@@ -18,13 +18,13 @@ export default function Home() {
   }
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center overflow-hidden">
       <Navbar theme="dark" />
       <div className="w-full relative">
         <div className="absolute top-0 left-0 w-full z-10" style={{ backgroundColor: '#121212', height: '6.5rem'}}></div>
-        <div className="relative w-full aspect-video">
+        <div className="relative w-full h-[calc(100vh-6.5rem)] md:h-auto md:aspect-video">
           <iframe
-            className="w-full h-full"
+            className="w-full h-full absolute inset-0"
             src="https://www.youtube.com/embed/7x-8knpgpn4?si=h3sudtAmSBNbFr54&autoplay=1&controls=0&rel=0&mute=1&start=10&loop=1&playlist=7x-8knpgpn4"
             title="YouTube video player"
             frameBorder="0"
@@ -35,27 +35,27 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-40 flex flex-row items-center justify-center" style={{ background: "#F4F5FA" }}>
-          <img src="/images/jayhawks1.jpg" alt="Jayhawks" className="w-80 h-auto object-contain mr-4" />
-          <img src="/images/jayhawks2.jpg" alt="Jayhawks" className="w-80 h-auto object-contain ml-4" />
+        <div className="absolute bottom-0 left-0 w-full h-auto md:h-40 flex flex-col md:flex-row items-center justify-center py-4 space-y-4 md:space-y-0" style={{ background: "#F4F5FA" }}>
+          <img src="/images/jayhawks1.jpg" alt="Jayhawks" className="w-48 md:w-80 h-auto object-contain md:mr-4" />
+          <img src="/images/jayhawks2.jpg" alt="Jayhawks" className="w-48 md:w-80 h-auto object-contain md:ml-4" />
         </div>
 
-        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-4">
           <img
             src="/images/ATO-dark-blue-yellow@2x.webp"
             alt="ATO Logo"
-            className="w-80 h-auto object-contain brightness-200 -mt-40"
+            className="w-48 md:w-80 h-auto object-contain brightness-200 -mt-20 md:-mt-40"
           />
-          <h2 className={`text-gray-200 text-xl mt-4 ${montserrat.className}`}>
+          <h2 className={`text-gray-200 text-lg md:text-xl mt-4 text-center ${montserrat.className}`}>
             At The University of Kansas
           </h2>
         </div>
       </div>
 
-      <div className="w-full py-20 pb-40 bg-white flex flex-col items-center text-center">
-        <h1 className={`text-black text-4xl ${crimsonText.className}`}>A Letter From Our President</h1>
-        <img src="/images/gold-cross.png" alt="Gold Cross" className="mt-8 w-16 h-16" />
-        <p className={`mt-8 text-black text-sm w-1/2 ${montserrat.className}`}>
+      <div className="w-full py-12 md:py-20 pb-20 md:pb-40 bg-white flex flex-col items-center text-center px-4 md:px-0">
+        <h1 className={`text-black text-3xl md:text-4xl ${crimsonText.className}`}>A Letter From Our President</h1>
+        <img src="/images/gold-cross.png" alt="Gold Cross" className="mt-6 md:mt-8 w-12 md:w-16 h-12 md:h-16" />
+        <p className={`mt-6 md:mt-8 text-black text-sm md:text-base w-full md:w-1/2 ${montserrat.className}`}>
           As President of ATO at the University of Kansas, I am honored to welcome you to our brotherhood. At ATO, we foster lifelong bonds, academic excellence, and personal growth that extends far beyond college.
           <br />
           <br />
@@ -70,9 +70,9 @@ export default function Home() {
           <br />
           If you're considering joining, you'll find a lifelong family and opportunities for growth. We look forward to welcoming you!
         </p>
-        <h2 className={`mt-8 text-black text-2xl ${crimsonText.className}`}>L&R</h2>
+        <h2 className={`mt-6 md:mt-8 text-black text-xl md:text-2xl ${crimsonText.className}`}>L&R</h2>
         <br />
-        <img src="/images/signature.png" alt="Robert Boersma" className="mt-8 w-80 h-full" />
+        <img src="/images/signature.png" alt="Robert Boersma" className="mt-6 md:mt-8 w-48 md:w-80 h-auto" />
       </div>
       <Footer />
     </div>

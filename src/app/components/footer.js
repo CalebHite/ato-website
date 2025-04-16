@@ -38,11 +38,11 @@ const Footer = () => {
     }
 
     return (
-        <footer className="site-footer w-full text-white py-16 pb-20" style={{ backgroundColor: '#163551' }}>
+        <footer className="site-footer w-full text-white py-8 md:py-16 pb-12 md:pb-20" style={{ backgroundColor: '#163551' }}>
             <div className="footer-content max-w-6xl mx-auto px-4">
-                <div className="footer-section flex flex-col md:flex-row justify-between items-start">
-                    <div className="contact-section mb-4 md:mb-0 w-full md:w-1/2">
-                        <h4 className={`text-4xl font-semibold mb-4 text-gray-200 ${oswald.className}`} style={{ color: '#F79825' }}>Contact Us</h4>
+                <div className="footer-section flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
+                    <div className="contact-section w-full md:w-1/2">
+                        <h4 className={`text-2xl md:text-4xl font-semibold mb-4 text-gray-200 ${oswald.className}`} style={{ color: '#F79825' }}>Contact Us</h4>
                         <form className="email-form space-y-4" onSubmit={sendEmail}>
                             <input
                                 type="email"
@@ -57,33 +57,44 @@ const Footer = () => {
                                 required
                                 rows="6"
                                 className={`w-full p-2 bg-gray-100 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${montserrat.className}`}
-                                style={{ minHeight: "150px", resize: "vertical" }}
+                                style={{ minHeight: "120px", resize: "vertical" }}
                             ></textarea>
                             <button
                                 type="submit"
-                                className={`interest-form-button mt-6 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-lg py-3 px-12 ${montserrat.className}`}
+                                className={`w-full md:w-auto interest-form-button mt-4 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-base md:text-lg py-2 md:py-3 px-8 md:px-12 ${montserrat.className}`}
                             >
                                 Send
                             </button>
                         </form>
 
-                        <div className="flex items-center mt-12">
+                        <div className="flex flex-col md:flex-row items-center md:items-start mt-8 md:mt-12">
                             <img
                                 src="images/gold-cross.png"
                                 alt="Gold Cross"
                                 onClick={scrollToTop}
-                                className="cursor-pointer mr-4"
+                                className="cursor-pointer mb-4 md:mb-0 md:mr-4 w-12 h-12 md:w-16 md:h-16"
                             />
-                            <div>
-                                <h4 className={`text-4xl font-semibold text-gray-200 ${oswald.className}`} style={{ color: '#F79825' }}>Alpha Tau Omega</h4>
-                                <p className={`text-md text-gray-300 ${montserrat.className}`}>America's Leadership Development Fraternity</p>
+                            <div className="text-center md:text-left">
+                                <h4 className={`text-2xl md:text-4xl font-semibold text-gray-200 ${oswald.className}`} style={{ color: '#F79825' }}>Alpha Tau Omega</h4>
+                                <p className={`text-sm md:text-md text-gray-300 ${montserrat.className}`}>America's Leadership Development Fraternity</p>
                             </div>
                         </div>
                     </div>
-                    <div className="map-section mt-8 md:mt-0 md:ml-8 w-full md:w-1/2">
-                        <h4 className={`text-4xl font-semibold mb-4 text-gray-200 ${oswald.className}`} style={{ color: '#F79825' }}>Our Location</h4>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.6180349971196!2d-95.24241662410766!3d38.95555364327066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bf6f4ce4b9a027%3A0xc28b3b3b73824076!2sAlpha%20Tau%20Omega%20Fraternity!5e0!3m2!1sen!2sus!4v1743394462867!5m2!1sen!2sus" width="100%" height="400" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-md shadow-lg"></iframe>
-                        <p className={`mt-4 text-md text-gray-300 ${montserrat.className}`}>1537 Tennessee Street, Lawrence, Kansas 66046</p>
+                    <div className="map-section w-full md:w-1/2 md:ml-8">
+                        <h4 className={`text-2xl md:text-4xl font-semibold mb-4 text-gray-200 ${oswald.className}`} style={{ color: '#F79825' }}>Our Location</h4>
+                        <div className="w-full h-[300px] md:h-[400px]">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.6180349971196!2d-95.24241662410766!3d38.95555364327066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bf6f4ce4b9a027%3A0xc28b3b3b73824076!2sAlpha%20Tau%20Omega%20Fraternity!5e0!3m2!1sen!2sus!4v1743394462867!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="100%" 
+                                style={{ border: 0 }} 
+                                allowFullScreen="" 
+                                loading="lazy" 
+                                referrerPolicy="no-referrer-when-downgrade" 
+                                className="rounded-md shadow-lg"
+                            ></iframe>
+                        </div>
+                        <p className={`mt-4 text-sm md:text-md text-gray-300 ${montserrat.className}`}>1537 Tennessee Street, Lawrence, Kansas 66046</p>
                     </div>
                 </div>
             </div>
@@ -92,3 +103,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
