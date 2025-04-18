@@ -15,7 +15,6 @@ const Navbar = ({ theme }) => {
     { id: 0, label: 'Home', sectionId: '' },
     { id: 1, label: 'About', sectionId: 'about' },
     { id: 2, label: 'Join ATO', sectionId: 'recruitment' },
-    { id: 3, label: 'Parents & Alumni', sectionId: 'parents-alumni' },
   ];
 
   const handleTabClick = (id, sectionId) => {
@@ -31,10 +30,17 @@ const Navbar = ({ theme }) => {
       const currentPath = window.location.pathname.replace('/', '');
       const currentTab = tabs.find(tab => tab.sectionId === currentPath);
       
-      // If no current tab is found, default to Home
+      // If no current tab is found, check if we're on an about subpage
       if (currentTab) {
         setActiveTab(currentTab.id);
+      } else if (['awards', 'philanthropy', 'scholarship', 'leadership'].includes(currentPath)) {
+        // If we're on an about subpage, highlight the About tab
+        const aboutTab = tabs.find(tab => tab.label === 'About');
+        if (aboutTab) {
+          setActiveTab(aboutTab.id);
+        }
       } else {
+        // Default to Home
         const homeTab = tabs.find(tab => tab.label === 'Home');
         if (homeTab) {
           setActiveTab(homeTab.id);

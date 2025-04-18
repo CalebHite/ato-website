@@ -30,11 +30,11 @@ export default function MobileNav({ isOpen, onClose }) {
     ];
 
     return (
-        <div 
+        <div
             className={`fixed inset-0 bg-black bg-opacity-75 transition-opacity z-[100] ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
             onClick={onClose}
         >
-            <div 
+            <div
                 className={`fixed right-0 top-0 h-full w-64 bg-white shadow-xl transform transition-transform z-[101] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 onClick={(e) => e.stopPropagation()}
             >
@@ -61,7 +61,7 @@ export default function MobileNav({ isOpen, onClose }) {
                         About
                         <span className="text-xl">{isAboutOpen ? '−' : '+'}</span>
                     </button>
-                    
+
                     {isAboutOpen && (
                         <div className="pl-4 border-l-2 border-gray-200">
                             {aboutPages.map((page) => (
@@ -76,21 +76,13 @@ export default function MobileNav({ isOpen, onClose }) {
                             ))}
                         </div>
                     )}
-                    
+
                     <Link
                         href="/recruitment"
                         onClick={onClose}
                         className="py-4 px-4 text-gray-800 text-left hover:bg-gray-100 rounded-lg mb-2 text-lg font-medium"
                     >
                         Join ATO
-                    </Link>
-                    
-                    <Link
-                        href="/parents-alumni"
-                        onClick={onClose}
-                        className="py-4 px-4 text-gray-800 text-left hover:bg-gray-100 rounded-lg mb-2 text-lg font-medium"
-                    >
-                        Parents & Alumni
                     </Link>
                 </div>
             </div>
