@@ -20,72 +20,72 @@ export default function Recruitment() {
             <Navbar theme="dark" />
             <div className="relative h-screen flex items-center justify-center">
                 <img
-                    src="/images/Retreat.jpg"
-                    className="absolute w-full h-full object-cover"
+                    src="images/asfalt-light.png"
+                    className="absolute w-full h-full object-cover bg-black"
                     alt="Background"
                 />
-                <div className="absolute w-full h-full bg-black opacity-50 z-10" />
                 <img
                     src="images/Join-ATO-white-yellow-logo@2x.webp"
-                    className="relative z-30 mx-auto"
+                    className="relative z-30 mx-auto w-full max-w-md px-4"
                     alt="Logo"
                 />
             </div>
 
-            <div className="w-full h-40 bg-gray-200 flex flex-row items-center justify-center gap-x-10 p-4">
-                <img className="w-16 h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
-                <img className="w-16 h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
-                <img className="w-16 h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+            <div className="w-full h-auto py-8 bg-gray-200 flex flex-col md:flex-row items-center justify-center gap-y-4 md:gap-x-10 p-4">
+                <div className="flex flex-row gap-x-4 md:gap-x-10">
+                    <img className="w-12 h-12 md:w-16 md:h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                    <img className="w-12 h-12 md:w-16 md:h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                    <img className="md:hidden w-12 h-12 md:w-16 md:h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                </div>
 
-                <h4 className={`text-4xl text-center text-bold ${oswald.className}`} style={{ color: '#F79825' }}>Meet Our Recruitment Team</h4>
+                <h4 className={`text-2xl md:text-4xl text-center font-bold ${oswald.className}`} style={{ color: '#F79825' }}>Meet Our Recruitment Team</h4>
 
-                <img className="w-16 h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
-                <img className="w-16 h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
-                <img className="w-16 h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                <div className="flex flex-row gap-x-4 md:gap-x-10">
+                    <img className="w-12 h-12 md:w-16 md:h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                    <img className="w-12 h-12 md:w-16 md:h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                    <img className="md:hidden w-12 h-12 md:w-16 md:h-16" src="images/gold-cross.png" alt="Gold Cross"></img>
+                </div>
             </div>
-            <div className="flex flex-row text-gray-300 text-center" style={{ backgroundColor: '#163551' }}>
-                <div className="w-1/2 flex flex-col py-10 items-center">
+            <div className="flex flex-col md:flex-row text-gray-300 text-center" style={{ backgroundColor: '#163551' }}>
+                <div className="w-full md:w-1/2 flex flex-col py-10 items-center justify-center">
                     <div className="flex flex-col mb-8 items-center">
-                        <img src="images/fohlm.png" className="w-48 h-48"></img>
-                        <h1 className={`text-3xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Fohlmeister</h1>
-                        <p className={`text-md ${montserrat.className}`}>Recruitment Chairman</p>
-                        <p className={`text-md ${montserrat.className}`}>913-703-9298</p>
-                        <p className={`text-md ${montserrat.className}`}>ryanfohlmeister@gmail.com</p>
+                        <img src="images/fohlm.png" className="w-32 h-32 md:w-48 md:h-48"></img>
+                        <h1 className={`text-2xl md:text-3xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Fohlmeister</h1>
+                        <p className={`text-sm md:text-md ${montserrat.className}`}>Recruitment Chairman</p>
+                        <p className={`text-sm md:text-md ${montserrat.className}`}>913-703-9298</p>
+                        <a href="mailto:ryanfohlmeister@gmail.com" className={`text-sm md:text-md ${montserrat.className}`} style={{ color: '#6495ED' }}>ryanfohlmeister@gmail.com</a>
                     </div>
-                    <div className="flex flex-row gap-x-10">
-                        <div className="flex flex-col w-1/8 items-center">
-                            <img src="images/duckworth.png" className="w-36 h-36"></img>
-                            <h1 className={`text-2xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Henry Duckworth</h1>
-                            <p className={`text-sm ${montserrat.className}`}>913-638-8020</p>
-                            <p className={`text-sm ${montserrat.className}`}>henrybraden@icloud.com</p>
+                    <div className="flex flex-col sm:hidden lg:flex lg:flex-row gap-y-8 lg:gap-x-10 px-4">
+                        <div className="flex flex-col items-center w-full lg:w-1/3">
+                            <img src="images/duckworth.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Henry Duckworth</h1>
+                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>913-638-8020</p>
                         </div>
-                        <div className="flex flex-col w-1/8 items-center">
-                            <img src="images/rowe.png" className="w-36 h-36"></img>
-                            <h1 className={`text-2xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Tyler Rowe</h1>
-                            <p className={`text-sm ${montserrat.className}`}>402-560-4477</p>
-                            <p className={`text-sm ${montserrat.className}`}>tylersrowe05@gmail.com</p>
+                        <div className="flex flex-col items-center w-full lg:w-1/3">
+                            <img src="images/rowe.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Tyler Rowe</h1>
+                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>402-560-4477</p>
                         </div>
-                        <div className="flex flex-col w-1/8 items-center">
-                            <img src="images/lips.png" className="w-36 h-36"></img>
-                            <h1 className={`text-2xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Hannigan</h1>
-                            <p className={`text-sm ${montserrat.className}`}>402-990-3967</p>
-                            <p className={`text-sm ${montserrat.className}`}>ryanhannigan445@gmail.com</p>
+                        <div className="flex flex-col items-center w-full lg:w-1/3">
+                            <img src="images/lips.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Hannigan</h1>
+                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>402-990-3967</p>
                         </div>
                     </div>
                 </div>
-                <div className="w-1 bg-gray-200"></div>
-                <div className="w-1/2 p-8">
-                    <h2 className={`text-3xl ${oswald.className}`} style={{ color: '#F79825' }}>
+                <div className="w-full h-px md:w-px md:h-auto bg-gray-200 my-4 md:my-0"></div>
+                <div className="w-full md:w-1/2 p-4 md:p-8">
+                    <h2 className={`text-2xl md:text-3xl ${oswald.className}`} style={{ color: '#F79825' }}>
                         Living at Alpha Tau Omega
                     </h2>
-                    <p className={`text-md my-4 ${montserrat.className}`}>
+                    <p className={`text-sm md:text-md my-4 ${montserrat.className}`}>
                         Living in the house provides a unique opportunity to bond with students from all over the country and create lifelong friendships. The shared experiences and camaraderie foster a strong sense of community. Additionally, living in the house allows for easier participation in events and activities, enhancing your overall fraternity experience.
                     </p>
                     <hr />
-                    <h3 className={`text-2xl mt-4 ${oswald.className}`} style={{ color: '#F79825' }}>
+                    <h3 className={`text-xl md:text-2xl mt-4 ${oswald.className}`} style={{ color: '#F79825' }}>
                         House Information
                     </h3>
-                    <ul className={`mt-4 flex flex-col gap-y-2 p-4 rounded-lg ${montserrat.className}`}>
+                    <ul className={`mt-4 flex flex-col gap-y-2 p-2 md:p-4 rounded-lg text-sm md:text-md ${montserrat.className}`}>
                         <li>Current Population of 71 members</li>
                         <br />
                         <li>Financial Dues for New Members is $800/Semester</li>
@@ -95,7 +95,7 @@ export default function Recruitment() {
                         <li>Live with roommates for your first year, then move into your own room</li>
                     </ul>
                     <hr />
-                    <p className={`text-md mt-4 ${montserrat.className}`}>
+                    <p className={`text-sm md:text-md my-4 ${montserrat.className}`}>
                         Living in the house is often cheaper than living in the dorms, as all costs are included. This allows for a more budget-friendly option while enjoying a vibrant community and numerous benefits.
                     </p>
                 </div>

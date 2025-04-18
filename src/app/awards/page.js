@@ -63,7 +63,7 @@ export default function Awards() {
             </div>
 
             <div className="flex flex-col items-center mb-10">
-                <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%]">
+                <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%] md:w-[70%]">
                     <div className="w-full md:w-1/2">
                         <img src="/images/True-Merit.png" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="True Merit Award" />
                     </div>
