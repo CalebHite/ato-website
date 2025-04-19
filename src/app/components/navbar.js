@@ -59,7 +59,7 @@ const Navbar = ({ theme }) => {
 
   return (
     <nav className="w-full backdrop-blur-md shadow-md z-50 fixed top-0 border-b border-transparent bg-black/30">
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-24">
+      <div className="max-w-7xl mx-auto px-8 flex justify-between items-center h-24">
         <Link href="/">
           <img
             src="images/gold-cross.png"
@@ -99,7 +99,7 @@ const Navbar = ({ theme }) => {
         </button>
 
         {/* Jayhawk - Hidden on mobile */}
-        <Link href="/">
+        <Link href="/" className="hidden md:block">
           <img
             src="images/Jayhawk.png"
             alt="KU Jayhawk"

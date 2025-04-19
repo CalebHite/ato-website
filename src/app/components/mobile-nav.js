@@ -38,13 +38,18 @@ export default function MobileNav({ isOpen, onClose }) {
                 className={`fixed right-0 top-0 h-full w-64 bg-white shadow-xl transform transition-transform z-[101] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 onClick={(e) => e.stopPropagation()}
             >
-                <div className="flex justify-end p-2">
-                    <img
-                        src="images/Jayhawk.png"
-                        alt="KU Jayhawk"
-                        className="w-16 h-16"
-                    />
-                </div>
+                <Link
+                    href="/"
+                    onClick={onClose}
+                >
+                    <div className="flex justify-end p-2">
+                        <img
+                            src="images/Jayhawk.png"
+                            alt="KU Jayhawk"
+                            className="w-16 h-16"
+                        />
+                    </div>
+                </Link>
                 <div className="flex flex-col px-4">
                     <Link
                         href="/"
