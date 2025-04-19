@@ -84,6 +84,14 @@ export default function MobileNav({ isOpen, onClose }) {
                     >
                         Join ATO
                     </Link>
+
+                    <Link
+                        href="/parents-alumni"
+                        onClick={onClose}
+                        className="py-4 px-4 text-gray-800 text-left hover:bg-gray-100 rounded-lg mb-2 text-lg font-medium"
+                    >
+                        Parents Club
+                    </Link>
                 </div>
             </div>
         </div>

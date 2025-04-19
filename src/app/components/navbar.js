@@ -14,7 +14,8 @@ const Navbar = ({ theme }) => {
   const tabs = [
     { id: 0, label: 'Home', sectionId: '' },
     { id: 1, label: 'About', sectionId: 'about' },
-    { id: 2, label: 'Join ATO', sectionId: 'recruitment' },
+    { id: 2, label: 'Parents Club', sectionId: 'parents-alumni' },
+    { id: 3, label: 'Join ATO', sectionId: 'recruitment' },
   ];
 
   const handleTabClick = (id, sectionId) => {
@@ -29,11 +30,11 @@ const Navbar = ({ theme }) => {
     if (isMounted) {
       const currentPath = window.location.pathname.replace('/', '');
       const currentTab = tabs.find(tab => tab.sectionId === currentPath);
-      
+
       // If no current tab is found, check if we're on an about subpage
       if (currentTab) {
         setActiveTab(currentTab.id);
-      } else if (['awards', 'philanthropy', 'scholarship', 'leadership'].includes(currentPath)) {
+      } else if (['awards', 'philanthropy', 'scholarship', 'leadership', 'parents-club'].includes(currentPath)) {
         // If we're on an about subpage, highlight the About tab
         const aboutTab = tabs.find(tab => tab.label === 'About');
         if (aboutTab) {
@@ -66,7 +67,7 @@ const Navbar = ({ theme }) => {
             className="w-12 h-12 md:w-16 md:h-16 cursor-pointer hover:opacity-80 transition-opacity"
           />
         </Link>
-        
+
         {/* Desktop Menu */}
         <div className="hidden md:flex max-w-[40rem] justify-center">
           <div className="relative flex space-x-2 overflow-hidden rounded-full p-1.5">
@@ -98,11 +99,13 @@ const Navbar = ({ theme }) => {
         </button>
 
         {/* Jayhawk - Hidden on mobile */}
-        <img
-          src="images/Jayhawk.png"
-          alt="KU Jayhawk"
-          className="hidden md:block w-12 h-12 md:w-16 md:h-16"
-        />
+        <Link href="/">
+          <img
+            src="images/Jayhawk.png"
+            alt="KU Jayhawk"
+            className="hidden md:block w-12 h-12 md:w-16 md:h-16"
+          />
+        </Link>
       </div>
     </nav>
   );

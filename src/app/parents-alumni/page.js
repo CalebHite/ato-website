@@ -18,89 +18,199 @@ export default function ParentsAlumni() {
     }
 
     return (
-        <div className="min-h-screen">
-            <Navbar theme="light" />
-            <div className="flex flex-col items-center justify-center mt-48 px-8 pb-20">
-                <div className="mb-16 w-full max-w-4xl">
-                    <h1 className={`text-5xl text-center mb-8 ${oswald.className}`} style={{color: '#F79825'}}>Parents & Alumni</h1>
-                    
-                    {/* Parents Section */}
-                    <div className="mb-16">
-                        <h2 className={`text-3xl mb-6 ${oswald.className}`}>Parents Club</h2>
-                        <p className={`text-lg mb-8 ${montserrat.className}`}>
+        <div className="min-h-screen bg-gray-200">
+            <Navbar theme="dark" />
+            <div className="w-full relative">
+                <div className="w-full z-10" style={{ backgroundColor: '#121212', height: '6.5rem' }}></div>
+            </div>
+
+            {/* Hero Section */}
+            <div className="relative">
+                <div className="absolute inset-0 bg-[#163551] opacity-90"></div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                    <h1 className={`text-6xl md:text-7xl text-center text-white ${oswald.className}`}>
+                        Parents & Alumni
+                    </h1>
+                </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                {/* Parents Club Section */}
+                <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-16">
+                    <div className="relative h-[600px]">
+                        <img
+                            src="/images/Family.jpg"
+                            alt="ATO Family Gathering"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 right-0 p-8">
+                            <h2 className={`text-5xl text-white ${oswald.className}`}>Parents Club</h2>
+                        </div>
+                    </div>
+
+                    <div className="p-8">
+                        <p className={`text-xl text-gray-700 mb-12 ${montserrat.className}`}>
                             The ATO Parents Club is dedicated to supporting our chapter and fostering a strong community among parents of current members. Through various events and initiatives, parents play a vital role in enhancing the fraternity experience.
                         </p>
-                        
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                                <h3 className={`text-2xl mb-4 ${oswald.className}`} style={{color: '#F79825'}}>Mom's Club</h3>
-                                <ul className={`list-disc list-inside space-y-2 ${montserrat.className}`}>
-                                    <li>Holiday House Decorating (November)</li>
-                                    <li>Finals Week Care Packages</li>
-                                    <li>Spring Mom's Day Weekend</li>
-                                    <li>House Improvement Projects</li>
-                                </ul>
+
+                        <div className="grid md:grid-cols-2 gap-12">
+                            {/* Moms Club */}
+                            <div className="space-y-6">
+                                <div className="grid grid-cols-2 gap-4">
+                                    <img
+                                        src="/images/moms1.png"
+                                        alt="ATO Moms Club"
+                                        className="w-full h-64 object-cover rounded-xl shadow-lg"
+                                    />
+                                    <img
+                                        src="/images/moms2.png"
+                                        alt="ATO Moms Club"
+                                        className="w-full h-64 object-cover rounded-xl shadow-lg"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 className={`text-3xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Mom's Club</h3>
+                                    <p className={`text-lg text-gray-700 mb-6 ${montserrat.className}`}>
+                                        The Mom's Club plays a crucial role in creating a warm and welcoming environment for our members.
+                                    </p>
+                                    <ul className={`space-y-3 ${montserrat.className}`}>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Holiday House Decorating (November)
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Finals Week Care Packages
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Spring Mom's Day Weekend
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            House Improvement Projects
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Welcome Events for New Members
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Support for Chapter Events
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            
-                            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                                <h3 className={`text-2xl mb-4 ${oswald.className}`} style={{color: '#F79825'}}>Dad's Club</h3>
-                                <ul className={`list-disc list-inside space-y-2 ${montserrat.className}`}>
-                                    <li>Annual House Projects</li>
-                                    <li>Fall Dad's Day Weekend</li>
-                                    <li>Tailgating Events</li>
-                                    <li>Mentorship Opportunities</li>
-                                </ul>
+
+                            {/* Dads Club */}
+                            <div className="space-y-6">
+                                <div className="grid grid-cols-2 gap-4">
+                                    <img
+                                        src="/images/dad2.png"
+                                        alt="ATO Dads Club"
+                                        className="w-full h-64 object-cover rounded-xl shadow-lg"
+                                    />
+                                    <img
+                                        src="/images/dad3.png"
+                                        alt="ATO Dads Club"
+                                        className="w-full h-64 object-cover rounded-xl shadow-lg"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 className={`text-3xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Dad's Club</h3>
+                                    <p className={`text-lg text-gray-700 mb-6 ${montserrat.className}`}>
+                                        The Dad's Club focuses on mentorship and practical support for our chapter.
+                                    </p>
+                                    <ul className={`space-y-3 ${montserrat.className}`}>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Annual House Projects
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Fall Dad's Day Weekend
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Tailgating Events
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Mentorship Opportunities
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Career Development Workshops
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            House Maintenance Support
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    {/* Events Section */}
-                    <div className="mb-16">
-                        <h2 className={`text-3xl mb-6 ${oswald.className}`}>Annual Events</h2>
-                        <div className="space-y-6">
-                            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                                <h3 className={`text-2xl mb-4 ${oswald.className}`} style={{color: '#F79825'}}>Parents Weekend</h3>
-                                <p className={`${montserrat.className}`}>
-                                    Join us each fall for our annual Parents Weekend, featuring:
-                                </p>
-                                <ul className={`list-disc list-inside mt-2 ${montserrat.className}`}>
-                                    <li>KU Football Game</li>
-                                    <li>Parents Club Meetings</li>
-                                    <li>House BBQ & Social</li>
-                                    <li>Campus Activities</li>
-                                </ul>
+                {/* Events Section */}
+                <div className="bg-white rounded-2xl shadow-xl overflow-hidden mt-16">
+                    <div className="flex justify-between">
+                        <div className="p-8">
+                            <h2 className={`text-4xl mb-8 ${oswald.className}`}>Annual Events</h2>
+                            <div>
+                                <div>
+                                    <h3 className={`text-3xl mb-6 ${oswald.className}`} style={{ color: '#F79825' }}>Parents Weekend</h3>
+                                    <p className={`text-lg text-gray-700 mb-6 ${montserrat.className}`}>
+                                        Join us each fall for our annual Parents Weekend, featuring:
+                                    </p>
+                                    <ul className={`space-y-3 ${montserrat.className}`}>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            KU Football Game
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Parents Club Meetings
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            House BBQ & Social
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Campus Activities
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Chapter House Tours
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            Meet & Greet with Chapter Leadership
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Alumni Section */}
-                    <div className="mb-16">
-                        <h2 className={`text-3xl mb-6 ${oswald.className}`}>Notable Alumni</h2>
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                                <h3 className={`text-2xl mb-4 ${oswald.className}`} style={{color: '#F79825'}}>Brother Tsuru</h3>
-                                <p className={`${montserrat.className}`}>
-                                    Honorary Alumni and dedicated mentor to our chapter, Brother Tsuru has made lasting contributions to our fraternity's growth and development.
-                                </p>
+                        <div className="grid grid-rows-2 gap-4 p-8">
+                            <div className="relative h-[200px]">
+                                <img
+                                    src="/images/brunch.png"
+                                    alt="Parents Weekend Brunch"
+                                    className="w-full h-full object-cover rounded-xl shadow-lg"
+                                />
                             </div>
-                            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                                <h3 className={`text-2xl mb-4 ${oswald.className}`} style={{color: '#F79825'}}>Guy Fieri</h3>
-                                <p className={`${montserrat.className}`}>
-                                    Famous chef, restaurateur, and television personality Guy Fieri is a proud ATO alumni, exemplifying our values of leadership and excellence.
-                                </p>
+                            <div className="relative h-[200px]">
+                                <img
+                                    src="/images/pickleball1.png"
+                                    alt="Parents Weekend Activities"
+                                    className="w-full h-full object-cover rounded-xl shadow-lg"
+                                />
                             </div>
                         </div>
-                    </div>
-
-                    {/* Archives Section */}
-                    <div>
-                        <h2 className={`text-3xl mb-6 ${oswald.className}`}>Alumni Records & Archives</h2>
-                        <p className={`text-lg mb-4 ${montserrat.className}`}>
-                            Our chapter maintains extensive records and archives documenting our rich history at the University of Kansas. Alumni can access newsletters, photo galleries, and historical documents by contacting our alumni relations chair.
-                        </p>
-                        <button className={`mt-4 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white text-lg py-3 px-8 ${montserrat.className}`}>
-                            Contact Alumni Relations
-                        </button>
                     </div>
                 </div>
             </div>

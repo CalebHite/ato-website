@@ -21,7 +21,7 @@ export default function Recruitment() {
             <div className="relative h-screen flex items-center justify-center">
                 <img
                     src="images/asfalt-light.png"
-                    className="absolute w-full h-full object-cover bg-black"
+                    className="absolute w-full h-full bg-black"
                     alt="Background"
                 />
                 <img
