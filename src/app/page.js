@@ -22,7 +22,7 @@ export default function Home() {
       <Navbar theme="dark" />
       <div className="w-full relative">
         <div className="absolute top-0 left-0 w-full z-10" style={{ backgroundColor: '#121212', height: '6.5rem'}}></div>
-        <div className="relative w-full h-[calc(70vh-6.5rem)] md:h-auto md:aspect-video">
+        <div className="relative w-full h-[65vh] sm:h-[80vh] md:h-auto md:aspect-video">
           <iframe
             className="w-full h-full absolute inset-0"
             src="https://www.youtube.com/embed/7x-8knpgpn4?si=h3sudtAmSBNbFr54&autoplay=1&controls=0&rel=0&mute=1&start=10&loop=1&playlist=7x-8knpgpn4"
