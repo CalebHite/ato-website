@@ -47,7 +47,7 @@ export default function Awards() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Honors & Awards</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            The Gamma Mu chapter of Alpha Tau Omega at KU has been recognized for excellence in various areas, including scholarship, leadership, and community service. Our brothers have received numerous individual and chapter awards, demonstrating our commitment to upholding the values of Alpha Tau Omega.
+                            Our chapter has accumulated a plethora of awards not only locally at the University of Kansas but on a National scale as well. In regards to KU’s very own Rock Chalk Revue, ATO achieved the <b>Best Overall Show in 2021</b> out of 11 teams and as of recent <b>Best Male Lead in 2025</b>. As a testament to our status in the national fraternity of ATO we dominated <b>Best Overall Fraternity from 2012 to 2017</b>. In more recent years we have won ATO’s <b>True Merit award from 2021-2024</b> and are looking to hang another trophy in our rafters. These are only a few of our many awards throughout our history as the Gamma Mu chapter, and we hope to continue to our standard of excellence for years to come.
                         </p>
                     </div>
                 </div>
@@ -65,11 +65,13 @@ export default function Awards() {
 
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%] md:w-[70%]">
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 flex flex-col items-center">
                         <img src="/images/True-Merit.png" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="True Merit Award" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Receiving True Merit National Award</p>
                     </div>
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 flex flex-col items-center">
                         <img src="/images/signing.png" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Academic Excellence Award" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Scholarship signing</p>
                     </div>
                 </div>
             </div>

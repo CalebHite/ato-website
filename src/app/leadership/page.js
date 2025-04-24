@@ -47,13 +47,13 @@ export default function Leadership() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Executive Council</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            The Executive Council is the governing body of the chapter. There are 10 Executive Council members, each with a unique role. Every member of the Executive Council is elected by the brotherhood and holds an inegral role. Most Executive members learn the value of leadership and responsibility by serving on the Executive Council. They are responsible for the overall direction of the chapter and the implementation of the policies and decisions of the chapter.
+                            The Executive Council is the governing body of the chapter. There are 9 unique roles given to Executive Council members including President, Treasurer, and Recruitment. Every member of the Executive Council is <b>elected by the brotherhood</b> where they learn the value of leadership and responsibility. They are responsible for the overall direction, implementation of the policies, and decisions of the chapter. More than anything, <b>Executive members learn the skills necessary to succeed</b> in their respective industries and value the knowledge gained from their experience at ATO.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Chair Positions</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Beyond the Executive Council, dedicated brothers serve in specialized Chair roles to enhance the member experience at ATO. Some examples of Chair positions are Philanthropy Chair, Scholarship Chair, and Social Chair. Holding a Chair Position is another great way to learn the value of leadership and responsibility. Chairs are also elected by the brotherhood and play a vital part of the chapter.
+                            Beyond the Executive Council, dedicated brothers serve in specialized Chair roles to enhance the member experience at ATO. Some examples of Chair positions are Philanthropy Chair, Scholarship Chair, and Social Chair. Holding a Chair Position is another <b>great way to learn the value of leadership and responsibility</b>. Chairs are also elected by the brotherhood and play vital roles in the chapter.
                         </p>
                     </div>
                 </div>
@@ -71,18 +71,13 @@ export default function Leadership() {
 
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%]">
-                    <div className="w-full md:w-1/3">
+                    <div className="w-full md:w-1/3 flex flex-col items-center">
                         <img src="/images/Exec.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Executive Council" />
-                    </div>
-                    <div className="w-full md:w-1/3">
-                        <img src="/images/Grad2.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Graduation" />
-                    </div>
-                    <div className="w-full md:w-1/3">
-                        <img src="/images/Skiing.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Skiing Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Current Executive Council</p>
                     </div>
                 </div>
             </div>
-            
+
             <p className={`text-xl text-gray-900 text-center w-full mb-10 ${oswald.className}`}>
                 You can find more information about ATO Kansas at the <a href="https://kuifc.org/alpha-tau-omega" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Interfraternity Council</a> or by clicking the tabs above.
             </p>
