@@ -103,7 +103,7 @@ const Navbar = ({ theme }) => {
           <img
             src="images/Jayhawk.png"
             alt="KU Jayhawk"
-            className="hidden md:block w-12 h-12 md:w-16 md:h-16"
+            className="hidden md:block w-12 h-12 md:w-16 md:h-16 hover:opacity-80"
           />
         </Link>
       </div>

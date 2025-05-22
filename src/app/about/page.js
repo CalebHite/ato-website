@@ -60,13 +60,13 @@ export default function About() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our History</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            The Gamma Mu chapter of Alpha Tau Omega was founded in 1901, establishing a strong tradition of brotherhood and leadership at the University of Kansas. The chapter's first house was built at 1537 Tennessee Street in the 1940s and continues to serve as our home. Over the years, Gamma Mu has grown into one of the largest and most influential brotherhoods on campus, committed to fellowship, scholarship, and community service. Our members actively participate in campus organizations and leadership roles, enhancing their college experience. Alumni often return to share their stories, highlighting the lasting impact of their time in ATO and the friendships formed here.
+                            The Gamma Mu chapter of Alpha Tau Omega was founded in 1901, establishing a strong tradition of brotherhood and leadership at the University of Kansas. The chapter's first house was built at <b>1537 Tennessee Street</b> in the 1940s and continues to serve as our home. Over the years, Gamma Mu has grown into one of the largest and most influential brotherhoods on campus, committed to fellowship, scholarship, and community service. <b>Our members actively participate</b> in campus organizations and leadership roles, enhancing their college experience. Alumni often return to share their stories, highlighting the <b>lasting impact of their time in ATO</b> and the friendships formed here.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Our Brotherhood</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Our brotherhood includes members from diverse fields such as engineering, business, science, and arts. We promote this diversity by organizing events that broaden our members' experiences, including social gatherings and out-of-state trips. These activities create lasting memories and strengthen our bonds. Additionally, ATO alumni frequently visit to share their insights, emphasizing the enduring legacy of our fraternity and the lifelong friendships formed within our community.
+                            Our brotherhood includes members from diverse fields such as engineering, business, science, and arts. We promote this diversity by organizing events that broaden our members' experiences, including <b>social gatherings</b> and <b>out-of-state trips</b>. These activities create lasting memories and strengthen our bonds. Additionally, ATO alumni frequently visit to share their insights, emphasizing the enduring legacy of our fraternity and the <b>lifelong friendships</b> formed within our community.
                         </p>
                     </div>
                 </div>
@@ -83,14 +83,17 @@ export default function About() {
             </div>
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%]">
-                    <div className="w-full md:w-1/3">
+                    <div className="w-full md:w-1/3 flex flex-col items-center">
                         <img src="/images/Athletic1.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>ATOlympics Basketball Game</p>
                     </div>
-                    <div className="w-full md:w-1/3">
+                    <div className="w-full md:w-1/3 flex flex-col items-center">
                         <img src="/images/Paintball.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Paintball Brotherhood Event</p>
                     </div>
-                    <div className="w-full md:w-1/3">
+                    <div className="w-full md:w-1/3 flex flex-col items-center">
                         <img src="/images/RCR1.jpeg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="RCR Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Rock Chalk Revue Philanthropy</p>
                     </div>
                 </div>
             </div>

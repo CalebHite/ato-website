@@ -47,13 +47,13 @@ export default function Philanthropy() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Philanthropy</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            The Gamma Mu chapter of Alpha Tau Omega at KU takes pride in making a meaningful impact through philanthropy and community service. Whether it's coordinating donation drives, participating in campus-wide philanthropy competitions, or raising thousands of dollars through <a href="https://rockchalkrevue.com" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Rock Chalk Revue</a>, ATO ensures that our community remains a force for good.
+                            One of Gamma Mu’s founding principles is campus involvement, represented by our commitment to Philanthropy. We pride ourselves on our effort and willingness to help others in any way possible and have raised <b>thousands of dollars</b> through Rock Chalk Revue, campus-wide philanthropy events, and fundraising to <b>support organizations</b> like <a href='https://www.bbbskc.org' style={{color: "cornflowerblue", textDecoration: "underline"}}>Big Brothers Big Sisters</a>, the <a href='https://ballardcenter.org' style={{color: "cornflowerblue", textDecoration: "underline"}}>Ballard Center</a>, and the <a href='https://lawrencehumane.org' style={{color: "cornflowerblue", textDecoration: "underline"}}>Lawrence Humane Society</a>. Through our philanthropic efforts we have improved the lives of our fellow Jayhawks, the Lawrence community, and one another.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Community Service</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            In addition to philanthropy, ATO members are dedicated to making a positive impact in our community. From volunteering at local organizations such as Natural Ties, to participating in Lawrence service events, our brothers are committed to giving back to the community that supports them.
+                            In addition to philanthropy, ATO members are dedicated to making a positive impact in our community through volunteering. Members of ATO are required to report <b>15 hours</b> of community service every semester, which encourages us to be consistently involved in many volunteer organizations on campus. Our largest contributions go toward, but are not limited to, <a href='https://www.instagram.com/kunaturalties/?hl=en' style={{color: "cornflowerblue", textDecoration: "underline"}}>Natural Ties</a> and <a href='https://thebigevent.ku.edu' style={{color: "cornflowerblue", textDecoration: "underline"}}>The Big Event</a>.
                         </p>
                     </div>
                 </div>
@@ -70,14 +70,13 @@ export default function Philanthropy() {
             </div>
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%]">
-                    <div className="w-full md:w-1/3">
-                        <img src="/images/Service1_1.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Service Activities" />
-                    </div>
-                    <div className="w-full md:w-1/3">
+                    <div className="w-full md:w-1/3 flex flex-col items-center">
                         <img src="/images/RCR8.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="RCR Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Rock Chalk Revue Performance</p>
                     </div>
-                    <div className="w-full md:w-1/3">
+                    <div className="w-full md:w-1/3 flex flex-col items-center">
                         <img src="/images/Service2.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Service Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Natural Ties Community Service</p>
                     </div>
                 </div>
             </div>

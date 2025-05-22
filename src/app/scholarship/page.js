@@ -47,13 +47,13 @@ export default function Scholarship() {
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Academic Excellence</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            At the Gamma Mu chapter of Alpha Tau Omega, we take pride in our commitment to academic excellence. Our brothers consistently achieve high academic standards, with many earning Dean's List recognition and maintaining impressive GPAs. We provide a supportive environment that encourages academic success through study groups, tutoring resources, and a strong emphasis on time management.
+                            At the Gamma Mu chapter of Alpha Tau Omega, we take pride in our commitment to academic excellence. Our brothers consistently achieve high academic standards, with many earning Dean's List recognition and maintaining impressive GPAs. We provide a supportive environment that encourages academic success through study groups, tutoring resources, and a strong emphasis on time management. Our chapter stands just under a cumulative <b>GPA of 3.4/4.0</b>.
                         </p>
                     </div>
                     <div className="mb-8 w-full max-w-3xl">
                         <h1 className={`text-3xl md:text-4xl mb-4 ${oswald.className}`} style={{ color: '#F79825' }}>Scholarship Support</h1>
                         <p className={`text-md text-gray-800 ${montserrat.className}`}>
-                            Our chapter offers various scholarship opportunities and academic support programs to help brothers achieve their educational goals. From study sessions to mentorship programs, we ensure that every brother has the resources they need to excel in their academic pursuits while maintaining a balanced fraternity experience.
+                        In 2024, six freshmen were granted <b>$500 through the Dick Brown Scholarship</b>! Our chapter offers various scholarship opportunities and academic support programs to help brothers achieve their educational goals. From study sessions to mentorship programs, we ensure that every brother has the resources they need to excel in their academic pursuits while maintaining a balanced fraternity experience. 
                         </p>
                     </div>
                 </div>
@@ -71,11 +71,13 @@ export default function Scholarship() {
 
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%] md:w-[70%]">
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 flex flex-col items-center">
                         <img src="/images/Internships.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Internship Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Brothers Hired Here</p>
                     </div>
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 flex flex-col items-center">
                         <img src="/images/Grad1.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Graduation Activities" />
+                        <p className={`text-lg text-gray-800 ${montserrat.className}`}>Graduating Class</p>
                     </div>
                 </div>
             </div>

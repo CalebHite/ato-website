@@ -52,7 +52,7 @@ export default function ParentsAlumni() {
 
                     <div className="p-4 sm:p-6 md:p-8">
                         <p className={`text-lg sm:text-xl text-gray-700 mb-8 sm:mb-10 md:mb-12 ${montserrat.className}`}>
-                            The ATO Parents Club is dedicated to supporting our chapter and fostering a strong community among parents of current members. Through various events and initiatives, parents play a vital role in enhancing the fraternity experience.
+                            The ATO Parents Club is dedicated to supporting our chapter and fostering a strong community among parents of current members. Through various events and initiatives, parents play a vital role in enhancing the fraternity experience. Parents can easily get involved in ATO through these clubs once their child joins! 
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
@@ -78,7 +78,7 @@ export default function ParentsAlumni() {
                                     <ul className={`space-y-2 sm:space-y-3 ${montserrat.className}`}>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Holiday House Decorating (November)
+                                            Spring Mom's Weekend
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
@@ -86,19 +86,7 @@ export default function ParentsAlumni() {
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Spring Mom's Day Weekend
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            House Improvement Projects
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Welcome Events for New Members
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Support for Chapter Events
+                                            KU Football Tailgating
                                         </li>
                                     </ul>
                                 </div>
@@ -126,23 +114,11 @@ export default function ParentsAlumni() {
                                     <ul className={`space-y-2 sm:space-y-3 ${montserrat.className}`}>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Annual House Projects
+                                            Fall Dad's Weekend
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Fall Dad's Day Weekend
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Tailgating Events
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Mentorship Opportunities
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Career Development Workshops
+                                            Career Development and Mentorship Opportunities
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
@@ -169,11 +145,7 @@ export default function ParentsAlumni() {
                                     <ul className={`space-y-2 sm:space-y-3 ${montserrat.className}`}>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            KU Football Game
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Parents Club Meetings
+                                            KU Football Game Tailgating
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
@@ -181,15 +153,15 @@ export default function ParentsAlumni() {
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Campus Activities
-                                        </li>
-                                        <li className="flex items-center">
-                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
-                                            Chapter House Tours
+                                            Campus and Chapter House Activities
                                         </li>
                                         <li className="flex items-center">
                                             <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
                                             Meet & Greet with Chapter Leadership
+                                        </li>
+                                        <li className="flex items-center">
+                                            <span className="w-2 h-2 bg-[#F79825] rounded-full mr-3"></span>
+                                            And More!
                                         </li>
                                     </ul>
                                 </div>
