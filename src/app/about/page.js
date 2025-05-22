@@ -45,7 +45,7 @@ export default function About() {
                 <div className="flex flex-col md:flex-row items-center justify-center md:ml-40">
                     <h1 className={`mt-10 text-6xl md:text-8xl text-white ${oswald.className} mb-8 md:mb-16 z-10`} style={{ textShadow: '2px 2px 0 rgba(0, 0, 0, 0.7)' }}>About</h1>
                     <img
-                        src="images/yellow-ATO.png"
+                        src="/images/yellow-ATO.PNG"
                         className="relative z-30 mx-auto w-1/2 md:w-1/3 h-auto md:ml-8"
                         alt="ATO"
                     />
@@ -84,7 +84,7 @@ export default function About() {
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%]">
                     <div className="w-full md:w-1/3">
-                        <img src="/images/athletic1.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
+                        <img src="/images/Athletic1.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Athletic Activities" />
                     </div>
                     <div className="w-full md:w-1/3">
                         <img src="/images/Paintball.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Paintball Activities" />

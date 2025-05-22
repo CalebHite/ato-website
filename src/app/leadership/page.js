@@ -32,7 +32,7 @@ export default function Leadership() {
                 <div className="flex flex-col md:flex-row items-center justify-center md:ml-40">
                     <h1 className={`mt-10 text-6xl md:text-8xl text-white ${oswald.className} mb-8 md:mb-16 z-10`} style={{ textShadow: '2px 2px 0 rgba(0, 0, 0, 0.7)' }}>About</h1>
                     <img
-                        src="images/yellow-ATO.png"
+                        src="/images/yellow-ATO.PNG"
                         className="relative z-30 mx-auto w-1/2 md:w-1/3 h-auto md:ml-8"
                         alt="ATO"
                     />

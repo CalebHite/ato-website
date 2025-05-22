@@ -57,17 +57,17 @@ export default function Recruitment() {
                     </div>
                     <div className="flex flex-col sm:hidden lg:flex lg:flex-row gap-y-8 lg:gap-x-10 px-4">
                         <div className="flex flex-col items-center w-full lg:w-1/3">
-                            <img src="images/duckworth.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <img src="images/duckworth.PNG" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
                             <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Henry Duckworth</h1>
                             <p className={`text-xs lg:text-sm ${montserrat.className}`}>913-638-8020</p>
                         </div>
                         <div className="flex flex-col items-center w-full lg:w-1/3">
-                            <img src="images/rowe.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <img src="images/rowe.PNG" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
                             <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Tyler Rowe</h1>
                             <p className={`text-xs lg:text-sm ${montserrat.className}`}>402-560-4477</p>
                         </div>
                         <div className="flex flex-col items-center w-full lg:w-1/3">
-                            <img src="images/lips.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <img src="images/lips.PNG" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
                             <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Hannigan</h1>
                             <p className={`text-xs lg:text-sm ${montserrat.className}`}>402-990-3967</p>
                         </div>
