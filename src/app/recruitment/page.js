@@ -88,9 +88,9 @@ export default function Recruitment() {
                     <ul className={`mt-4 flex flex-col gap-y-2 p-2 md:p-4 rounded-lg text-sm md:text-md ${montserrat.className}`}>
                         <li>Current Population of 71 members</li>
                         <br />
-                        <li>Financial Dues for New Members is $800/Semester</li>
-                        <li>Financial Dues for Active Members is $550/Semester</li>
-                        <li>Financial Dues for In-house Members is $4,500/Semester</li>
+                        <li>New Members pay a one time fee of $100</li>
+                        <li>Rent for In-house Members is $4,100/Semester</li>
+                        <li>Financial Dues are $850/Semester ($550 Local + $300 National Dues)</li>
                         <br />
                         <li>Live with roommates for your first year, then move into your own room</li>
                     </ul>
