@@ -14,14 +14,40 @@ const Footer = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-            .then((result) => {
-                console.log(result.text);
-                alert('Email sent successfully!');
-            }, (error) => {
-                console.log(error.text);
-                alert('Failed to send email. Please try again later.');
-            });
+        // Get form data
+        const formData = new FormData(e.target);
+        const userEmail = formData.get('user_email');
+        const message = formData.get('message');
+
+        // Get environment variables
+        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+        if (!serviceId || !templateId || !publicKey) {
+            console.error('Email configuration is missing. Please check environment variables.');
+            return;
+        }
+
+        // Prepare template parameters
+        const templateParams = {
+            from_email: userEmail,
+            message: message,
+        }; 
+
+        // Send email using EmailJS
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+        .then((result) => {
+            alert('Email sent successfully!');
+            e.target.reset(); // Clear the form
+        })
+        .catch((error) => {
+            if (error.status === 422) {
+                alert('Email configuration error. Please check the template setup in EmailJS.');
+            } else {
+                alert(`Failed to send email. Error: ${error.text || error.message}`);
+            }
+        });
     };
 
     const scrollToTop = () => {
