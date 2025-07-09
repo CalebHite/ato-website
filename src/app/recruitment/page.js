@@ -49,11 +49,11 @@ export default function Recruitment() {
             <div className="flex flex-col md:flex-row text-gray-300 text-center" style={{ backgroundColor: '#163551' }}>
                 <div className="w-full md:w-1/2 flex flex-col py-10 items-center justify-center">
                     <div className="flex flex-col mb-8 items-center">
-                        <img src="images/fohlm.png" className="w-32 h-32 md:w-48 md:h-48"></img>
-                        <h1 className={`text-2xl md:text-3xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Fohlmeister</h1>
+                        <img src="images/kaler.png" className="w-32 h-32 md:w-48 md:h-48"></img>
+                        <h1 className={`text-2xl md:text-3xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Kaler Lidgett</h1>
                         <p className={`text-sm md:text-md ${montserrat.className}`}>Recruitment Chairman</p>
-                        <p className={`text-sm md:text-md ${montserrat.className}`}>913-703-9298</p>
-                        <a href="mailto:ryanfohlmeister@gmail.com" className={`text-sm md:text-md ${montserrat.className}`} style={{ color: '#6495ED' }}>ryanfohlmeister@gmail.com</a>
+                        <a href="mailto:kansasatorecruit@gmail.com" className={`text-sm md:text-md ${montserrat.className}`}>kansasatorecruit@gmail.com</a>
+                        <p className={`text-sm md:text-md ${montserrat.className}`}>913-223-4412</p>
                     </div>
                     <div className="flex flex-col sm:hidden lg:flex lg:flex-row gap-y-8 lg:gap-x-10 px-4">
                         <div className="flex flex-col items-center w-full lg:w-1/3">
@@ -96,7 +96,7 @@ export default function Recruitment() {
                     </ul>
                     <hr />
                     <p className={`text-sm md:text-md my-4 ${montserrat.className}`}>
-                        Living in the house is often cheaper than living in the dorms, as all costs are included. This allows for a more budget-friendly option while enjoying a vibrant community and numerous benefits.
+                        Living in the house is often cheaper than living in the dorms, as all costs are included. This inlcudes food, utilities, and rent. It allows for a more budget-friendly option while participating in our community and numerous benefits.
                     </p>
                 </div>
             </div>
