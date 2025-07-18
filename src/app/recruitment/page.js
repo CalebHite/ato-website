@@ -89,14 +89,14 @@ export default function Recruitment() {
                         <li>Current Population of 71 members</li>
                         <br />
                         <li>New Members pay a one time fee of $100</li>
-                        <li>Rent for In-house Members is $4,100/Semester</li>
+                        <li>Rent for In-house Members is $4,950/Semester</li>
                         <li>Financial Dues are $850/Semester ($550 Local + $300 National Dues)</li>
                         <br />
                         <li>Live with roommates for your first year, then move into your own room</li>
                     </ul>
                     <hr />
                     <p className={`text-sm md:text-md my-4 ${montserrat.className}`}>
-                        Living in the house is often cheaper than living in the dorms, as all costs are included. This inlcudes food, utilities, and rent. It allows for a more budget-friendly option while participating in our community and numerous benefits.
+                        Living in the house is often cheaper than living in the dorms, as all costs are included. This inlcudes food, utilities, and rent. It allows for a more budget-friendly option while participating in our community among numerous other benefits.
                     </p>
                 </div>
             </div>
@@ -125,7 +125,6 @@ export default function Recruitment() {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                     ></iframe>
-                    <p>(Posted in 2022, may be outdated)</p>                    
                 </div>
             </div>
             <Footer />
