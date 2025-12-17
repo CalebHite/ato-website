@@ -72,7 +72,7 @@ export default function Leadership() {
             <div className="flex flex-col items-center mb-10">
                 <div className="flex flex-col md:flex-row justify-center gap-4 mt-4 w-[90%]">
                     <div className="w-full md:w-1/3 flex flex-col items-center">
-                        <img src="/images/Exec.jpg" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Executive Council" />
+                        <img src="/images/exec.png" className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg" alt="Executive Council" />
                         <p className={`text-lg text-gray-800 ${montserrat.className}`}>Current Executive Council</p>
                     </div>
                 </div>

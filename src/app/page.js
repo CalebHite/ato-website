@@ -72,7 +72,7 @@ export default function Home() {
         </p>
         <h2 className={`mt-6 md:mt-8 text-black text-xl md:text-2xl ${crimsonText.className}`}>L&R</h2>
         <br />
-        <img src="/images/signature.png" alt="Robert Boersma" className="mt-6 md:mt-8 w-48 md:w-80 h-auto" />
+        <img src="/images/signature.png" alt="Henry Duckworth's Signature" className="mt-6 md:mt-8 w-48 md:w-80 h-auto" />
       </div>
       <Footer />
     </div>
