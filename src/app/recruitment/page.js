@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import { Montserrat, Oswald } from 'next/font/google';
 import Footer from "../components/footer";
 import { useClientSideOnly } from '../../hooks/useClientSideOnly';
+import ParticlesBackground from "../components/particles-background";
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 const oswald = Oswald({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] });
@@ -18,12 +19,8 @@ export default function Recruitment() {
     return (
         <div>
             <Navbar theme="dark" />
-            <div className="relative h-screen flex items-center justify-center">
-                <img
-                    src="images/asfalt-light.png"
-                    className="absolute w-full h-full bg-black"
-                    alt="Background"
-                />
+            <div className="relative h-screen flex items-center justify-center bg-black">
+                <ParticlesBackground />
                 <img
                     src="images/Join-ATO-white-yellow-logo@2x.webp"
                     className="relative z-30 mx-auto w-full max-w-md px-4"
@@ -49,27 +46,27 @@ export default function Recruitment() {
             <div className="flex flex-col md:flex-row text-gray-300 text-center" style={{ backgroundColor: '#163551' }}>
                 <div className="w-full md:w-1/2 flex flex-col py-10 items-center justify-center">
                     <div className="flex flex-col mb-8 items-center">
-                        <img src="images/kaler.png" className="w-32 h-32 md:w-48 md:h-48"></img>
-                        <h1 className={`text-2xl md:text-3xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Kaler Lidgett</h1>
+                        <img src="images/rowe.png" className="w-32 h-32 md:w-48 md:h-48"></img>
+                        <h1 className={`text-2xl md:text-3xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Tyler Rowe</h1>
                         <p className={`text-sm md:text-md ${montserrat.className}`}>Recruitment Chairman</p>
                         <a href="mailto:kansasatorecruit@gmail.com" className={`text-sm md:text-md ${montserrat.className}`}>kansasatorecruit@gmail.com</a>
-                        <p className={`text-sm md:text-md ${montserrat.className}`}>913-223-4412</p>
+                        <p className={`text-sm md:text-md ${montserrat.className}`}>402-560-4477</p>
                     </div>
                     <div className="flex flex-col sm:hidden lg:flex lg:flex-row gap-y-8 lg:gap-x-10 px-4">
                         <div className="flex flex-col items-center w-full lg:w-1/3">
-                            <img src="images/duckworth.PNG" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
-                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Henry Duckworth</h1>
-                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>913-638-8020</p>
+                            <img src="images/patrick.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Patrick Ahrens</h1>
+                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>708-860-3288</p>
                         </div>
                         <div className="flex flex-col items-center w-full lg:w-1/3">
-                            <img src="images/rowe.PNG" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
-                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Tyler Rowe</h1>
-                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>402-560-4477</p>
+                            <img src="images/kessler.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Charlie Kessler</h1>
+                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>708-800-8514</p>
                         </div>
                         <div className="flex flex-col items-center w-full lg:w-1/3">
-                            <img src="images/lips.PNG" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
-                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Ryan Hannigan</h1>
-                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>402-990-3967</p>
+                            <img src="images/wylie.png" className="w-28 h-28 lg:w-36 lg:h-36 object-cover"></img>
+                            <h1 className={`text-xl my-1 ${oswald.className}`} style={{ color: '#F79825' }}>Wylie Barnes</h1>
+                            <p className={`text-xs lg:text-sm ${montserrat.className}`}>913-808-9353</p>
                         </div>
                     </div>
                 </div>
