@@ -1,9 +1,6 @@
-'use client';
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { useState, useEffect } from 'react';
-import MobileNav from './components/mobile-nav';
+import ClientLayoutWrapper from './components/client-layout-wrapper';
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -17,25 +14,24 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
+export const metadata = {
+  title: {
+    template: "ATO at KU - %s",
+    default: "ATO at KU",
+  },
+  description: "University of Kansas chapter of the Alpha Tau Omega Fraternity. ATO Gamma Mu",
+  icons: {
+    icon: "/images/gold-cross.png",
+  },
+};
+
 export default function RootLayout({ children }) {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-
-  useEffect(() => {
-    const handleToggleMobileNav = () => {
-      setIsMobileNavOpen(prev => !prev);
-    };
-
-    window.addEventListener('toggleMobileNav', handleToggleMobileNav);
-    return () => {
-      window.removeEventListener('toggleMobileNav', handleToggleMobileNav);
-    };
-  }, []);
-
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-        <MobileNav isOpen={isMobileNavOpen} onClose={() => setIsMobileNavOpen(false)} />
+        <ClientLayoutWrapper>
+          {children}
+        </ClientLayoutWrapper>
       </body>
     </html>
   );
